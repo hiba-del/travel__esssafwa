@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Bungee+Shade&family=Gloock&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rochester&family=Sofia&display=swap" rel="stylesheet">
+       
+    <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+span{
+    color: green;
+     font-family: 'Times New Roman', Times, serif;
+}
+.logo{
+        width: 110px;
+        height: 80px;
+        margin-bottom: 10px;
+       }
+   
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* S'assurer que la navbar est toujours au-dessus du contenu */
+    border-radius: 8px;
+    box-shadow: 0 0 10px black;
+    height: 80px;
+   background-color: aliceblue;
+}
+
+.navbar ul li a{
+margin: 10px;
+color: black;
+font-family: "Acme";
+
+
+}
+nav a{
+    
+    text-decoration: none;
+    color: black;
+    border-bottom: 3px solid transparent;
+   
+}
+
+.navbar a:hover{
+    border-bottom: 2px solid green;
+    color: rgb(0, 0, 0);
+transition: all 0.3s;
+}
+.global{
+    margin-top: 100px;
+}
+
+.container{
+    display:flex;
+    flex-wrap: wrap;
+   
+}
+    img{
+    
+    height: 200px;
+    object-fit: cover;
+    }
+    .carte{
+    border-radius: 8px;
+    box-shadow: 0 0 10px black;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease;
+    }
+    .carte:hover{
+        transform: translateY(-30px);
+    }
+    .BTN
+        {
+            margin-top: -20px;
+        }
+
+    
+    
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <!-- Logo ou nom du site -->
+          <img class="navbar-brand logo"  src="image/LOGO.png" alt="">
+         
+          <!-- Bouton pour les petits écrans -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Liste des éléments de la navbar -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html" target="_blank">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Exclusives.html" target="_blank">Destinations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hotel.html" target="_blank">hôtels</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="sing.html" target="_blank">sign_in</a>
+            </li>
+        </ul>
+    </div>
+</div>
+</nav>
+<div class="global">
+   <div class="container my-4  ">
+    <div class="row espace">
+        <div class="col-md-3 p-3">
+            <div class="card carte" style="height: 420px;">
+                <img src="image/k.webp" class="card-img-top  " alt="Destination">
+                <div class="card-body">
+                 <strong>  <h2 class=" card-title text-success">Paris, France</h2></strong> 
+                    <p>Explorez la Ville Lumière avec ses monuments iconiques comme la Tour Eiffel.</p>
+                    <button class="btn btn-primary text-align">savoir plus</button>
+                </div>
+            </div> 
+        </div> 
+            <div class="col-md-3 p-3">
+                <div class="card carte" style="height: 420px;">
+                    <img src="image/tokyo.webp" class="card-img-top  " alt="Destination" >
+                    <div class="card-body">
+                     <strong>  <h2 class=" card-title text-success">Tokyo, Japon</h2></strong> 
+                        <p>Un mélange fascinant de tradition et de modernité, Tokyo vous éblouira. </p>
+                        <button class="btn btn-primary text-align">savoir plus</button>
+                    </div>
+                </div>        
+            </div>   
+            <div class="col-md-3 p-3">
+                <div class="card carte" style="height: 420px;">
+                    <img src="image/new york.jpg" class="card-img-top  " alt="Destination" ">
+                    <div class="card-body">
+                     <strong>  <h2 class=" card-title text-success">New York, USA</h2></strong> 
+                        <p>Venez découvrir la ville qui ne dort jamais, avec Times Square et Central Park. </p>
+                        <button class="btn btn-primary text-align">savoir plus</button>
+                    </div>
+                </div>        
+            </div>
+            <div class="col-md-3 p-3">
+                <div class="card carte" style="height: 420px;">
+                    <img src="image/rome.jpg" class="card-img-top  " alt="Destination" >
+                    <div class="card-body">
+                     <strong>  <h2 class=" card-title text-success">Rome, Italie</h2></strong> 
+                        <p>Plongez dans l'histoire avec le Colisée, le Vatican et ses ruelles pittoresques. </p>
+                        <button class="btn btn-primary text-align">savoir plus</button>
+                    </div>
+                </div>        
+            </div>      
+            <div class="col-md-3 p-3">
+                <div class="card carte" style="height: 420px;">
+                    <img src="image/le cap.jpg" class="card-img-top  " alt="Destination" >
+                    <div class="card-body">
+                     <h4 class=" card-title text-success" >Le Cap, Afrique du Sud </h4>
+                        <p>Admirez la montagne de la beauté des paysages africains. </p>
+                        <button class="btn btn-primary text-align BTN">savoir plus</button>
+                    </div>
+                </div>        
+            </div>  
+            <div class="col-md-3 p-3">
+                <div class="card carte" style="height: 420px;">
+                    <img src="image/download.jpg" class="card-img-top  " alt="Destination" >
+                    <div class="card-body">
+                     <strong>  <h2 class=" card-title text-success">Sydney, Australie</h2></strong> 
+                        <p>Visitez l'Opéra de Sydney et la plage de Bondi dans cette ville dynamique.</p>
+                        <button class="btn btn-primary text-align BTN ">savoir plus</button>
+                    </div>
+                </div>        
+            </div> 
+                    <div class="col-md-3 p-3">
+                        <div class="card carte" style="height: 420px;">
+                            <img src="image/MARRAKECH.jpg" class="card-img-top  " alt="Destination">
+                            <div class="card-body">
+                             <strong>  <h3 class=" card-title text-success">Marrakech, Maroc</h3></strong> 
+                                <p>Venez découvrir les souks et la médina dans cette ville envoûtante.</p>
+                                <button class="btn btn-primary text-align BTN">savoir plus</button>
+                            </div>
+                        </div> 
+                    </div> 
+                    <div class="col-md-3 p-3">
+                        <div class="card carte" style="height: 420px;">
+                            <img src="image/OUKAÏMEDEN.jpg" class="card-img-top  " alt="Destination">
+                            <div class="card-body">
+                             <strong>  <h2 class=" card-title text-success">Oukaimeden, Maroc</h2></strong> 
+                                <p>Un lieu parfait pour les amateurs de sports d'hiver,
+                                     offrant une vue magnifique.</p>
+                                <button class="btn btn-primary text-align BTN">savoir plus</button>
+                            </div>
+                        </div> 
+                    </div> 
+                    <div class="col-md-3 p-3">
+                        <div class="card carte" style="height: 420px;">
+                            <img src="image/istanbul.jpg" class="card-img-top  " alt="Destination" >
+                            <div class="card-body">
+                             <strong>  <h2 class=" card-title text-success">Istanbul, Turkey</h2></strong> 
+                                <p>Istanbul, sa culture vibrante et ses sites emblématiques, 
+                                    Istanbul est une destination incontournable.</p>
+                                <button class="btn btn-primary text-align BTN">savoir plus</button>
+                            </div>
+                        </div> 
+                    </div> 
+                    <div class="col-md-3 p-3">
+                        <div class="card carte" style="height: 420px;">
+                            <img src="image/agadir.jpg" class="card-img-top  " alt="Destination" >
+                            <div class="card-body">
+                             <strong>  <h2 class=" card-title text-success">Agadir, Maroc</h2></strong> 
+                                <p>Agadir est l'endroit idéal pour un séjour de détente et de découvertes.</p>
+                                <button class="btn btn-primary text-align ">savoir plus</button>
+                            </div>
+                        </div> 
+                    </div> 
+                    <div class="col-md-3 p-3">
+                        <div class="card carte" style="height: 420px;">
+                            <img src="image/bali.jpg" class="card-img-top  " alt="Destination">
+                            <div class="card-body">
+                             <strong>  <h2 class=" card-title text-success">Bali, indonesia</h2></strong> 
+                                <p>Bali. Que vous soyez amateur de nature, de culture ou de détente, Bali a quelque chose à offrir à chacun.</p>
+                                <button class="btn btn-primary text-align BTN ">savoir plus</button>
+                            </div>
+                        </div> 
+                    </div> 
+        <div class="col-md-3 p-3">
+        <div class="card carte" style="height: 420px;">
+            <img src="image/tunisie.jpg" class="card-img-top  " alt="Destination" >
+            <div class="card-body">
+                <strong>  <h2 class=" card-title text-success">Tunisie</h2></strong> 
+                <p>a Tunisie vous invite à découvrir ses plages méditerranéennes, 
+                ses sites antiques comme Carthage. </p>
+                <button class="btn btn-primary text-align ">savoir plus</button>
+            </div>
+         </div> 
+     </div> 
+
+
+                   
+    </div>
+</div>
+</div> 
+</body>
+</html>

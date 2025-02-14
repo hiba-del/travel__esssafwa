@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Bungee+Shade&family=Gloock&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rochester&family=Sofia&display=swap" rel="stylesheet">
+       
+    <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+span{
+    color: green;
+     font-family: 'Times New Roman', Times, serif;
+}
+.logo{
+        width: 110px;
+        height: 80px;
+        margin-bottom: 10px;
+       }
+   
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* S'assurer que la navbar est toujours au-dessus du contenu */
+    border-radius: 8px;
+    box-shadow: 0 0 10px black;
+    height: 80px;
+   background-color: aliceblue;
+}
+
+.navbar ul li a{
+margin: 10px;
+color: black;
+font-family: "Acme";
+
+
+}
+nav a{
+     text-decoration: none;
+    color: black;
+    border-bottom: 3px solid transparent;
+   
+}
+.navbar a:hover{
+    border-bottom: 2px solid green;
+    color: rgb(0, 0, 0);
+transition: all 0.3s;
+}
+.global{
+    margin-top: 100px;}
+.container{
+    display:flex;
+    flex-wrap: wrap;
+}
+img{
+    height: 200px;
+    object-fit: cover;
+  
+}
+.carte{
+    border-radius: 8px;
+    box-shadow: 0 0 10px black;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.carte:hover{
+    transform: translateY(-30px);
+}
+.BTN{
+    margin-top: -30px;}
+
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <!-- Logo ou nom du site -->
+          <img class="navbar-brand logo"  src="image/LOGO.png" alt="">
+         
+          <!-- Bouton pour les petits écrans -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Liste des éléments de la navbar -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html" target="_blank">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Exclusives.html" target="_blank">Destinations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="activité.html" target="_blank">Activités</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hotel.html" target="_blank">hôtels</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="sing.html" target="_blank">sign_in</a>
+            </li>
+        </ul>
+    </div>
+</div>
+</nav>
+<div class="global">
+   <div class="container my-4  ">
+    <div class="row espace">
+        <div class="col-md-3 p-3">
+            <div class="card carte" style="height: 420px;">
+                <img src="image/Paris,France.jpg" class="card-img-top" alt="Marrakech">
+                <div class="card-body">
+                    <h5 class="card-title">Visite de la Tour Eiffel</h5>
+                    <p class="card-text">Montez au sommet de l'emblématique Tour Eiffel  
+                        d'une vue spectaculaire sur Paris.</p>
+                    <a href="#" class="btn btn-primary BTN">En savoir plus</a>
+                </div>
+            </div>        
+        </div>
+        <div class="col-md-3 p-3">
+            <div class="card carte" style="height: 420px;">
+                <img src="image/tooookyo.jpg" class="card-img-top" alt="Tokyo">
+        <div class="card-body">
+            <h5 class="card-title">Explorer Shibuya</h5>
+            <p class="card-text">Vivez l'effervescence de Shibuya, le quartier dynamique de Tokyo connu pour son carrefour animé.</p>
+            <a href="#" class="btn btn-primary">En savoir plus</a>
+                </div>
+            </div> 
+        </div> 
+           
+            <div class="col-md-3 p-3">
+                <div class="card carte" style="height: 420px;">
+                    <img src="image/visite&.jpg" class="card-img-top" alt="New York">
+                        <div class="card-body">
+                            <h5 class="card-title">Visite de Times Square</h5>
+                            <p class="card-text">Plongez dans l'agitation de Times Square, l'un des lieux les plus emblématiques de New York.</p>
+                            <a href="#" class="btn btn-primary">En savoir plus</a>
+                    </div>
+                </div> 
+            </div>
+            <div class="col-md-3 p-3">
+                <div class="card carte" style="height: 420px;">
+                    <img src="image/downloadddd.jpg" class="card-img-top" alt="Rome">
+                    <div class="card-body">
+                        <h5 class="card-title">Visite du Colisée</h5>
+                        <p class="card-text">Découvrez l'un des monuments les plus célèbres de l'Antiquité : le Colisée de Rome.</p>
+                        <a href="#" class="btn btn-primary">En savoir plus</a>
+                    </div>
+                </div>        
+            </div> 
+              
+            <div class="col-md-3 p-3">
+                <div class="card carte" style="height: 420px;">
+                    <img src="image/5III.jpg" class="card-img-top" alt="Le Cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Table Mountain</h5>
+                        <p class="card-text">Montez en téléphérique sur la montagne de la Table pour des vues à couper le souffle sur Le Cap.</p>
+                        <a href="#" class="btn btn-primary">En savoir plus</a>
+                    </div>
+                </div>        
+            </div>
+            <div class="col-md-3 p-3">
+                <div class="card carte" style="height: 420px;">
+                    <img src="image/OPR.jpg" class="card-img-top" alt="Le Cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Opéra de Sydney</h5>
+                    <p class="card-text">Admirez l'architecture unique de l'Opéra de Sydney, l'un des sites les plus célèbres au monde.</p>
+                    <a href="#" class="btn btn-primary">En savoir plus</a>
+                       
+                </div>        
+            </div>  
+            </div>    
+            <div class="col-md-3 p-3">
+                <div class="card carte" style="height: 420px;">
+                    <img src="image/jamaa.jpg" class="card-img-top" alt="Marrakech">
+                    <div class="card-body">
+                        <h5 class="card-title">Place Jemaa el-Fna</h5>
+                        <p class="card-text">Plongez dans l'ambiance vibrante de la place Jemaa el-Fna, un lieu iconique de Marrakech.</p>
+                        <a href="#" class="btn btn-primary">En savoir plus</a>
+                    </div>
+                </div>        
+            </div>
+           
+            <div class="col-md-3 p-3">
+                <div class="card carte" style="height: 420px;">
+                    <img src="image/okeim.jpg" class="card-img-top" alt="Marrakech">
+                    <div class="card-body">
+                        <h5 class="card-title">Ski</h5>
+                        <p class="card-text">Profitez des pistes de ski exceptionnelles d'Okaimden, adaptées à tous les niveaux de skieurs.</p>
+                     <a href="#" class="btn btn-primary">En savoir plus</a>
+                    </div>
+                </div>        
+            </div>
+            
+            <div class="col-md-3 p-3">
+                <div class="card carte" style="height: 420px; ">
+                    <img src="image/ISTANBULF.jpg" class="card-img-top" alt="Istanbul">
+                    <div class="card-body">
+                        <div class="card-body">
+                            <h5 class="card-title">Visite de Sainte-Sophie</h5>
+                            <p class="card-text">Découvrez l'impressionnante basilique Sainte-Sophie.</p>
+                            <a href="#" class="btn btn-primary ">En savoir plus</a>
+                    </div>
+                </div> 
+            </div> 
+            </div>
+            
+                    <div class="col-md-3 p-3">
+                        <div class="card carte" style="height: 420px;">
+                            <img src="image/plage.jpg" class="card-img-top" alt="Agadir">
+                    <div class="card-body">
+                        <h5 class="card-title">Plages d'Agadir</h5>
+                        <p class="card-text">Détendez-vous sur les plages de sable fin d'Agadir, idéales pour le farniente et les sports nautiques.</p>
+                        <a href="#" class="btn btn-primary">En savoir plus</a>
+                            </div>
+                        </div> 
+                    </div> 
+                    <div class="col-md-3 p-3">
+                        <div class="card carte" style="height: 420px;">
+                        
+                                <img src="image/baali.jpg" class="card-img-top" alt="Bali">
+                                <div class="card-body">
+                                    <h5 class="card-title">Temples de Bali</h5>
+                                    <p class="card-text">Visitez les magnifiques temples hindous de Bali et découvrez la culture spirituelle de l'île.</p>
+                                    <a href="#" class="btn btn-primary">En savoir plus</a>
+                            </div>
+                        </div> 
+                    </div> 
+               
+                <div class="col-md-3 p-3">
+                    <div class="card carte" style="height: 420px; ">
+                        <img src="image/TUUUU.jpg" class="card-img-top" >
+                        <div class="card-body">
+                    <div class="card-body">
+                        <h5 class="card-title">Site Archéologique de Carthage</h5>
+                        <p class="card-text">Explorez les ruines antiques de Carthage, l'une des plus grandes civilisations de l'Antiquité.</p>
+                        <a href="#" class="btn btn-primary BTN">En savoir plus</a>
+                        </div>
+                    </div> 
+               
+               
+
+                   
+    </div>
+</div>
+</div> 
+</body>
+</html>

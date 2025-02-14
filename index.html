@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Bungee+Shade&family=Gloock&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rochester&family=Sofia&display=swap" rel="stylesheet">
+    <!-- Lien vers le fichier CSS de Bootstrap -->
+    <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Lien vers ton fichier CSS personnalisé -->
+    <style>  
+    span{
+    color: green;
+     font-family: 'Times New Roman', Times, serif;
+}
+.logo{
+        width: 110px;
+        height: 80px;
+        margin-bottom: 10px;
+       }
+
+    
+   
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* S'assurer que la navbar est toujours au-dessus du contenu */
+    border-radius: 8px;
+    box-shadow: 0 0 10px black;
+    height: 80px;
+   background-color: aliceblue;
+}
+
+.navbar ul li a{
+margin: 10px;
+color: black;
+font-family: "Acme";
+
+
+}
+nav a{
+    
+    text-decoration: none;
+    color: black;
+    border-bottom: 3px solid transparent;
+   
+}
+
+.navbar a:hover{
+    border-bottom: 2px solid green;
+    color: rgb(0, 0, 0);
+transition: all 0.3s;
+}
+.interphase{
+    margin-top: 90px;
+    position: relative;
+   height: 600px;
+  overflow: hidden;
+}
+.interphase-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ z-index: -1;
+}
+.interphase-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+}
+.interphase-content h1{
+    font-family:   "Acme", serif;
+ font-size: 70px;
+}
+
+
+
+
+
+/* Espacement au-dessus du contenu pour éviter qu'il soit masqué par la navbar */
+button{
+  border-radius: 8px;
+  padding: 10px;
+  transition: background 0.3s
+
+}
+button:hover{
+  background-color: green;
+}
+
+input{
+  padding: 10px;
+  border-radius: 8px;
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <!-- Logo ou nom du site -->
+          <img class="navbar-brand logo"  src="image/LOGO.png" alt="">
+          
+          <!-- Bouton pour les petits écrans -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Liste des éléments de la navbar -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"target="_blank">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Exclusives.html"target="_blank">Destinations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="activité.html" target="_blank">Activités</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hotel.html" target="_blank">hôtels</a>
+              </li>
+              
+            <li class="nav-item">
+                <a class="nav-link" href="sing.html"target="_blank">sign_in</a>
+            </li>
+        </ul>
+    </div>
+</div>
+</nav>
+    <main>
+    <section class="interphase">
+        <div class="interphase-image">
+            <img src="image/interphase.jpg" >
+        </div>
+        <div class="interphase-content">
+            <h1>Welcome to TRAVEL <span>ESSAFWA</span></h1>
+             <p>Discover amazing destinations and book you next trip with us</p>
+            
+             <form>
+              <input list="countries" id="country" name="country"
+               placeholder="où allez-vous?">
+              <datalist id="countries">
+                <option value="France">
+                <option value="Japon">
+                <option value="Afrique de sud">
+                <option value="Italie">
+                <option value="Australie">
+                <option value="Maroc">
+                <option value="Turkey">
+                <option value="indonesia">
+                  <option value="Tunisie">
+                  </datalist>
+                <input type="date" >
+                <button>Rechercher</button>
+              </form>
+            </div>
+
+    </section>
+</main>
+
+             
+    </div>
+    
+
+    <!-- Lien vers le fichier JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
